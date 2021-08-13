@@ -11,6 +11,7 @@ import org.springframework.core.io.Resource;
 public class Test {
 	public static void main(String[] args) {
 		Resource resource;
+		
 		BeanFactory bf  = new XmlBeanFactory(new ClassPathResource(""));
 		ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:application.xml");
 		Person p = ac.getBean("person", Person.class);
